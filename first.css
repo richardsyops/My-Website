@@ -1,0 +1,251 @@
+body{
+    background-color: transparent;
+    margin: -0px;
+    padding: -0px;
+}
+.one{
+    background-color: white;
+    color: black;
+    height: 90px;
+    display: flex; 
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 10px;
+}
+.kr{
+
+    font-size: 50px;
+}
+.linkdiv{
+    display: flex; 
+    align-items: center;
+}
+.link{
+    color: black;
+    text-decoration: none; 
+    margin: 0 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.link:hover{
+    color: gray;
+}
+.third{
+    display: flex;
+    justify-content: space-between;
+
+}
+.firstimg{
+    width: 20px;
+}
+.backg{
+    background-image:  url(/Book-Hand.webp);
+    background-size: cover;
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 10px;
+section{
+padding-left: 80px;
+padding-top: 90px;
+margin-top: 150px;
+margin-left: 150px;
+color: white;
+h1{
+    font-size: 50px;
+    margin-bottom: -5px;
+}
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    border: solid 3px white;
+    transition: 0.7s;
+}
+button:hover{
+    background-color: grey;
+    transform: translateY(-4px);
+    border: solid 1px grey;
+}
+}
+.twoo{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding: 50px;
+.about{
+max-width: fit-content;
+padding: 50px;
+    }
+    .download{
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+p{text-align: righ;
+
+    }
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    border: solid 1px transparent;
+    transition: 0.5s;
+    }
+    button:hover{
+        background-color: grey;
+        transform: translateY(-4px);
+        border: solid 1px grey;
+    }
+}
+.skills{
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.focus{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    padding: 50px;
+    gap: 90px;
+}
+.skilll{
+    width: 300px;
+    p{
+        background-color: rgb(252, 252, 252);
+        padding: 5px;
+        gap: 10px;
+        text-align: left;
+        span{
+            background-color: rgb(230, 230, 230);
+            padding: 5px;
+            padding-right: 150px;
+            margin: -5px;
+        }
+    }
+}
+.portfolio{
+    padding: 50px;
+.protfolio{
+    justify-content: space-evenly;
+    display: grid;
+    padding-top: 80px;
+.potfolio{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+
+.web{
+    background-color: rgb(252, 252, 252);
+}
+div{
+    padding: 30px;
+    width: 250px;
+    box-shadow: rgb(240, 240, 240) 2px 2px 1px 2px;
+    background-color: rgb(230, 230, 230);
+}
+}
+}
+}
+.touch{
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+button{
+    padding: 10px;
+    cursor: pointer;
+    border: solid 3px white;
+    transition: 0.7s;
+    margin-top: 40px;
+}
+button:hover{
+    background-color: grey;
+    transform: translateY(-4px);
+    border: solid 1px grey;
+}
+}
+
+.contactwrap{
+    padding: 60px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+    margin-top: 30px;
+}
+.contactform input,
+.contactform textarea{
+    padding: 10px;
+    border: solid 1px rgb(210, 210, 210);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+.contactform button{
+    padding: 12px;
+    cursor: pointer;
+    border: solid 1px black;
+    background-color: white;
+    transition: 0.5s;
+}
+.contactform button:hover{
+    background-color: grey;
+    color: white;
+}
+.pricing{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.pricelist{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.pricecard{
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.pricecard.featured{
+    border: solid 2px black;
+    transform: translateY(-10px);
+}
+.price{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.timeline{
+    padding: 50px;
+    text-align: center;
+}
+.timelist{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.tstep{
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+    width: 250px;
+    border-radius: 7px;
+}
