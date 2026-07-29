@@ -1,251 +1,393 @@
-body{
-    background-color: transparent;
-    margin: -0px;
-    padding: -0px;
-}
-.one{
-    background-color: white;
-    color: black;
-    height: 90px;
-    display: flex; 
-    justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 7px;
-    padding: 10px;
-}
-.kr{
-
-    font-size: 50px;
-}
-.linkdiv{
-    display: flex; 
-    align-items: center;
-}
-.link{
-    color: black;
-    text-decoration: none; 
-    margin: 0 15px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.link:hover{
-    color: gray;
-}
-.third{
-    display: flex;
-    justify-content: space-between;
-
-}
-.firstimg{
-    width: 20px;
-}
-.backg{
-    background-image:  url(Book-Hand.webp);
-    background-size: cover;
-    height: 750px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 10px;
-section{
-padding-left: 80px;
-padding-top: 90px;
-margin-top: 150px;
-margin-left: 150px;
-color: white;
-h1{
-    font-size: 50px;
-    margin-bottom: -5px;
-}
-}
-button{
-    padding: 10px;
-    cursor: pointer;
-    border: solid 3px white;
-    transition: 0.7s;
-}
-button:hover{
-    background-color: grey;
-    transform: translateY(-4px);
-    border: solid 1px grey;
-}
-}
-.twoo{
-    display: flex;
-    justify-content: space-between;
-    gap: 90px;
-    padding: 50px;
-.about{
-max-width: fit-content;
-padding: 50px;
-    }
-    .download{
-        padding: 20px;
-    }
-    h1{
-        text-align: center;
-    }
-p{text-align: righ;
-
-    }
-
-button{
-    padding: 10px;
-    cursor: pointer;
-    border: solid 1px transparent;
-    transition: 0.5s;
-    }
-    button:hover{
-        background-color: grey;
-        transform: translateY(-4px);
-        border: solid 1px grey;
-    }
-}
-.skills{
-    background-color: rgb(240, 240, 240);
-    padding: 50px;
-    text-align: center;
-    justify-items: center;
-    justify-content: space-between;
-}
-.focus{
-    display: flex;
-    justify-items: center;
-    text-align: center;
-    padding: 50px;
-    gap: 90px;
-}
-.skilll{
-    width: 300px;
-    p{
-        background-color: rgb(252, 252, 252);
-        padding: 5px;
-        gap: 10px;
-        text-align: left;
-        span{
-            background-color: rgb(230, 230, 230);
-            padding: 5px;
-            padding-right: 150px;
-            margin: -5px;
-        }
-    }
-}
-.portfolio{
-    padding: 50px;
-.protfolio{
-    justify-content: space-evenly;
-    display: grid;
-    padding-top: 80px;
-.potfolio{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 10px;
-
-.web{
-    background-color: rgb(252, 252, 252);
-}
-div{
-    padding: 30px;
-    width: 250px;
-    box-shadow: rgb(240, 240, 240) 2px 2px 1px 2px;
-    background-color: rgb(230, 230, 230);
-}
-}
-}
-}
-.touch{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgb(240, 240, 240);
-    padding: 30px;
-button{
-    padding: 10px;
-    cursor: pointer;
-    border: solid 3px white;
-    transition: 0.7s;
-    margin-top: 40px;
-}
-button:hover{
-    background-color: grey;
-    transform: translateY(-4px);
-    border: solid 1px grey;
-}
+:root {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-alt: #eef2f7;
+  --text: #111827;
+  --muted: #4b5563;
+  --accent: #1f2937;
+  --accent-strong: #111827;
+  --border: #d1d5db;
 }
 
-.contactwrap{
-    padding: 60px;
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
-.contactform{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 6px;
-    margin-top: 30px;
+
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+button:hover,
+button:focus-visible {
+  transform: translateY(-2px);
+  background-color: #374151;
+  color: white;
+}
+
+.one {
+  background-color: var(--surface);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 16px 24px;
+  flex-wrap: wrap;
+}
+
+.kr {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.linkdiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.link {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--accent-strong);
+  background: var(--surface-alt);
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.firstimg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+}
+
+.backg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(Book-Hand.webp);
+  background-size: cover;
+  background-position: center;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.backg section {
+  max-width: 560px;
+  color: white;
+  margin-left: clamp(12px, 6vw, 80px);
+  padding: 24px;
+}
+
+.backg h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  margin: 0 0 10px;
+}
+
+.backg p {
+  font-size: 1.1rem;
+  margin: 0 0 18px;
+}
+
+.twoo {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  padding: 48px 24px;
+  align-items: start;
+}
+
+.about,
+.download {
+  padding: 24px;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.about h1,
+.download h1,
+.skills h1,
+.portfolio h1,
+.timeline h1,
+.contactwrap h1,
+.pricing h1 {
+  margin-top: 0;
+}
+
+.skills {
+  background: var(--surface-alt);
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.focus {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding-top: 24px;
+  text-align: left;
+}
+
+.focus > div,
+.tstep,
+.pricecard,
 .contactform input,
-.contactform textarea{
-    padding: 10px;
-    border: solid 1px rgb(210, 210, 210);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-family: inherit;
+.contactform textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
-.contactform button{
-    padding: 12px;
-    cursor: pointer;
-    border: solid 1px black;
-    background-color: white;
-    transition: 0.5s;
+
+.skilll p {
+  background: var(--surface);
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 8px;
 }
-.contactform button:hover{
-    background-color: grey;
-    color: white;
+
+.skilll span {
+  background: var(--surface-alt);
+  padding: 4px 8px;
+  border-radius: 999px;
 }
-.pricing{
-    padding: 50px;
-    text-align: center;
-    background-color: rgb(240, 240, 240);
+
+.portfolio {
+  padding: 48px 24px;
 }
-.pricelist{
-    display: flex;
+
+.protfolio {
+  display: grid;
+  gap: 20px;
+  padding-top: 24px;
+}
+
+.potfolio {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.potfolio > div,
+.web {
+  padding: 24px;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--surface-alt);
+  padding: 24px;
+}
+
+.touch button {
+  margin-top: 0;
+}
+
+.contactwrap {
+  padding: 48px 24px;
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 12px;
+  margin-bottom: 8px;
+  font-family: inherit;
+}
+
+.contactform button {
+  padding: 12px 16px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.pricing {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--surface-alt);
+}
+
+.pricelist {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 24px;
+  flex-wrap: wrap;
+}
+
+.pricecard {
+  background: var(--surface);
+  padding: 24px;
+  width: min(100%, 250px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.pricecard.featured {
+  border: 2px solid var(--accent);
+  transform: translateY(-8px);
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.timeline {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.timelist {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 24px;
+  flex-wrap: wrap;
+}
+
+.tstep {
+  background: var(--surface);
+  padding: 24px;
+  width: min(100%, 250px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 900px) {
+  .twoo {
+    grid-template-columns: 1fr;
+  }
+
+  .potfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .one {
     justify-content: center;
-    gap: 40px;
-    padding-top: 40px;
-    flex-wrap: wrap;
-}
-.pricecard{
-    background-color: white;
-    padding: 30px;
-    width: 220px;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.pricecard.featured{
-    border: solid 2px black;
-    transform: translateY(-10px);
-}
-.price{
-    font-size: 28px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.timeline{
-    padding: 50px;
     text-align: center;
+  }
+
+  .linkdiv,
+  .third {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .backg {
+    min-height: 60vh;
+    padding: 16px;
+  }
+
+  .backg section {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .focus,
+  .potfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .touch {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
-.timelist{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    padding-top: 40px;
-    flex-wrap: wrap;
+
+@media (max-width: 480px) {
+  .one,
+  .twoo,
+  .skills,
+  .portfolio,
+  .touch,
+  .contactwrap,
+  .pricing,
+  .timeline {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .backg {
+    align-items: flex-end;
+  }
+
+  button {
+    width: 100%;
+  }
 }
-.tstep{
-    background-color: rgb(240, 240, 240);
-    padding: 30px;
-    width: 250px;
-    border-radius: 7px;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
