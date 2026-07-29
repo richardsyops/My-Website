@@ -40,7 +40,7 @@ body{
     width: 20px;
 }
 .backg{
-    background-image:  url(/Book-Hand.webp);
+    background-image:  url(Book-Hand.webp);
     background-size: cover;
     height: 750px;
     background-attachment: fixed;
