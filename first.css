@@ -170,7 +170,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  padding-top: 24px;
+  padding: 10px;
   text-align: left;
 }
 
@@ -184,36 +184,66 @@ button:focus-visible {
   border-radius: 12px;
 }
 
-.skilll p {
-  background: var(--surface);
-  padding: 10px 12px;
-  margin: 8px 0;
-  border-radius: 8px;
+.skill-list p {
+  margin: 12px 0;
 }
 
-.skilll span {
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  height: 10px;
+  overflow: hidden;
   background: var(--surface-alt);
-  padding: 4px 8px;
   border-radius: 999px;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: inherit;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.social-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: var(--accent-strong);
+  text-decoration: underline;
 }
 
 .portfolio {
   padding: 48px 24px;
 }
 
-.protfolio {
+.portfolio-grid {
   display: grid;
   gap: 20px;
   padding-top: 24px;
 }
 
-.potfolio {
+.portfolio-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
-.potfolio > div,
+.portfolio-row > div,
 .web {
   padding: 24px;
   background: var(--surface);
@@ -255,6 +285,14 @@ button:focus-visible {
   padding: 12px;
   margin-bottom: 8px;
   font-family: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #d97706;
+  outline-offset: 3px;
 }
 
 .contactform button {
@@ -323,7 +361,7 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .potfolio {
+  .portfolio-row {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -351,7 +389,7 @@ button:focus-visible {
   }
 
   .focus,
-  .potfolio {
+  .portfolio-row {
     grid-template-columns: 1fr;
   }
 
